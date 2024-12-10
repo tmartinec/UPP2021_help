@@ -5,35 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPP-nápověda</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+        .obrazek-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Přidá mezeru mezi bloky */
         }
-        .container {
-            max-width: 100%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        .obrazek-text img {
+            margin-right: 10px; /* Mezera mezi obrázkem a textem */
+            max-width: 200px; /* Zabrání příliš velkým obrázkům */
         }
-        h1, h2 {
-            color: #333;
-        }
-        ul, ol {
-            padding-left: 20px;
-        }
-        .content-list ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .content-list ul li {
-            margin-bottom: 8px;
-        }
-        .section {
-            margin-top: 20px;
+    
+        .obrazek-text:last-child {
+            margin-bottom: 0; /* Zruší spodní mezeru u posledního bloku */
         }
     </style>
 </head>
@@ -52,13 +36,42 @@
 
         <div id="obsah-app" class="section">
             <h2>Obsah aplikace</h2>
-            <img src="images/obsah_panel.png" alt="Popis obrázku" width="500">
+            <img src="images/obsah_panel.png" alt="panel" width="500">
             <p>text</p>
         </div>
 
         <div id="widget" class="section">
             <h2>Ovládání aplikace</h2>
-            <p>text</p>
+            <p>Ovládací panel v levé horní části obrazovky obsahuje několik užitečných nástrojů a funkcí, které vám umožní snadno prozkoumat a pracovat s mapovými daty. V seznamu  níže se seznámíte s jednotlivými částmi aplikace.</p>
+        </div>
+            <div class="obrazek-text">
+                <img src="images/b_vrstvy.png" alt="vrstvy">
+                <p>V panelu vrstvy se zobrazují výkresy UP Plzeň a podkladní vrstvy. Je zde možné také ovládat průhlednost jednotlivých výkresů.</p>
+            </div>
+            <div class="obrazek-text">    
+                <img src="images/b_legenda.png" alt="legenda">
+                <p>V panelu legendy se zobrazují legendy k jednotlivým výkresům UP Plzeň.</p>
+            </div>
+            <div class="obrazek-text">    
+                <img src="images/b_text.png" alt="text">
+                <p>V tomto panelu se zubrazuje textová část ÚP Plzeň (ve výstavbě)</p>
+            </div>
+            <div class="obrazek-text">    
+                <img src="images/b_sdilet.png" alt="sdilet">
+                <p>Nástrojem sdílet lze vytvořit odkaz ke sdílení aktuálního rozsahu mapy a vrstv.</p>
+            </div>
+            <div class="obrazek-text">    
+                <img src="images/b_tisk.png" alt="tisk">
+                <p>Nástroj Tisk umožňuje na základě zvolených parametrů vytisknout obsah mapového okna. Tisk generuje soubor, který je následně nabídnut ke stažení.</p>
+            </div>
+            <div class="obrazek-text">    
+                <img src="images/b_hledat.png" alt="hledat">
+                <p>Nástroj vyhledávání umožňuje snadné vyhledávání dle údajů z RÚIAN (Registr územní identifikace, adres a nemovitostí). Tento nástroj je užitečný pro rychlé nalezení konkrétní adresy, parcely nebo jiných geografických entit registrovaných v RÚIAN.</p>
+            </div>
+            <div class="obrazek-text">    
+                <img src="images/b_mereni.png" alt="mereni">
+                <p>Nástroj měření umožňuje měření délky a plochy</p>
+            </div>
         </div>
 
         <div id="pravy-panel" class="section">
