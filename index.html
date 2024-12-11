@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPP-nápověda</title>
     <style>
+        body {
+            font-family: "Avenir Next", sans-serif;
+        }
         .obrazek-text {
             display: flex;
             align-items: center;
@@ -18,6 +21,26 @@
     
         .obrazek-text:last-child {
             margin-bottom: 0; /* Zruší spodní mezeru u posledního bloku */
+        }
+        .boxed-h3 {
+            color: white; /* Barva textu */
+            background-color: #484848; /* Barva pozadí */
+            padding: 10px; /* Vnitřní odsazení */
+            display: inline-block; /* Rámeček se přizpůsobí obsahu */
+            font-size: 14px; /* Nastaví velikost textu */
+        }
+        h1 {
+            font-size: 26px; /* Nastaví velikost textu */
+        }
+        h2 {
+            font-size: 22px; /* Nastaví velikost textu */
+            margin-top: 50px; /* Zvýší mezeru nad H2 */
+        }
+        h3 {
+            margin-bottom: 0px; /* Menší mezera pod nadpisem */
+        }
+        p {
+            margin-top: 5px; /* Zmenšení mezery nad textem */
         }
     </style>
 </head>
@@ -36,8 +59,14 @@
 
         <div id="obsah-app" class="section">
             <h2>Obsah aplikace</h2>
-            <img src="images/obsah_panel.png" alt="panel" width="500">
-            <p>text</p>
+            <p>Hlavní menu v záhlaví aplikace slouží k přepínání mezi platným ÚP Plzeň a návrhem změny ÚP Plzeň č. 4.</p>
+            <h3 class="boxed-h3">ÚP Plzeň 2023</h3>
+            <p>V této mapě je dostupný platný Územní plán Plzeň. Město Plzeň má zpracovaný  Územní plán Plzeň, který byl schválen usnesením č. 434 ze dne 8. září 2016.Tento územní plán byl aktualizován formou Změny č. 1 ÚP Plzeň (2021), Změny č. 2 ÚP Plzeň (2023) a Změny č. 3 ÚP Plzeň (2023).</p>
+            <h3 class="boxed-h3">ÚP Plzeň - změna č. 4</h3>
+            <p>V této mapě je dostupný návrh změny č. 4 ÚP Plzeň. O zahájení pořizování Změny č. 4 ÚPP rozhodlo Zastupitelstvo města Plzně usnesením č. 176 ze dne 15. 6. 2023. Seznam změn je dostupný v pravém postranním panelu a v mapě je možné oblasti dotčené změnou zobrazit zapnutím vrstvy "ÚPP změna č.4". </p>
+            <p style="color: red;"">Návrh změny č. 4 ÚP Plzeň je v rozpracovatelnosti. Zveřejněný pro veřejnost bude při zahájení projednávání změny.</p>
+            <h3 class="boxed-h3">porovnání</h3>
+            <p>V panelu vrstvy se zobrazují výkresy ÚP Plzeň a podkladní vrstvy. Je zde možné také ovládat průhlednost jednotlivých výkresů.</p>
         </div>
 
         <div id="widget" class="section">
@@ -55,6 +84,10 @@
             <div class="obrazek-text">    
                 <img src="images/b_text.png" alt="text">
                 <p>V tomto panelu se zubrazuje textová část ÚP Plzeň (ve výstavbě)</p>
+            </div>
+            <div class="obrazek-text">    
+                <img src="images/b_podklad.png" alt="podklad">
+                <p>V tomto panelu lze změnit podkladové mapy. Ve Výchozím nastavení je aktivní prázdná podkladová mapa. Mimo katastrální mapy je možné zobrazit letecké snímky a mapu majetkových poměrů. </p>
             </div>
             <div class="obrazek-text">    
                 <img src="images/b_sdilet.png" alt="sdilet">
@@ -76,7 +109,8 @@
 
         <div id="pravy-panel" class="section">
             <h2>Funkce postranního panelu</h2>
-            <p>text</p>
+            <p>Pravý postranní panel je aktivní v mapě zobrazující změnu č. 4 ÚP Plzeň. Zobrazuje seznam změn a lokalit. Při kliknutí na položku se provede přiblížení v mapě a označení vybraného prvku. Tento panel lze v případě potřeby skrýt. </p>
+            <img src="images/p_panel.png" alt="panel" width="800">
         </div>
     </div>
 </body>
