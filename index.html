@@ -5,40 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPP-nápověda</title>
     <style>
-       body {
-    font-family: "Avenir Next", sans-serif;
-    margin: 0; /* Zabrání posunu obsahu mimo viewport */
-    padding: 0;
-}
-
-.obrazek-text {
-    display: flex;
-    flex-wrap: wrap; /* Umožní zalomení obsahu na menších šířkách */
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.obrazek-text img {
-    margin-right: 10px;
-    max-width: 100%; /* Obrázky budou responsivní */
-    height: auto; /* Zachová poměr stran obrázků */
-}
-
-.boxed-h3 {
-    color: white;
-    background-color: #484848;
-    padding: 10px;
-    display: inline-block;
-    font-size: 14px;
-    max-width: 100%; /* Zabrání přesahování textu */
-    box-sizing: border-box; /* Zahrne padding do výpočtu šířky */
-}
-
-h1, h2, h3, p {
-    max-width: 100%; /* Zabrání přesahování textu */
-    box-sizing: border-box;
-}
-
+        body {
+            font-family: "Avenir Next", sans-serif;
+        }
+        .obrazek-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Přidá mezeru mezi bloky */
+        }
+    
+        .obrazek-text img {
+            margin-right: 10px; /* Mezera mezi obrázkem a textem */
+            max-width: 200px; /* Zabrání příliš velkým obrázkům */
+        }
+    
+        .obrazek-text:last-child {
+            margin-bottom: 0; /* Zruší spodní mezeru u posledního bloku */
+        }
+        .boxed-h3 {
+            color: white; /* Barva textu */
+            background-color: #484848; /* Barva pozadí */
+            padding: 10px; /* Vnitřní odsazení */
+            display: inline-block; /* Rámeček se přizpůsobí obsahu */
+            font-size: 14px; /* Nastaví velikost textu */
+        }
+        h1 {
+            font-size: 26px; /* Nastaví velikost textu */
+        }
+        h2 {
+            font-size: 22px; /* Nastaví velikost textu */
+            margin-top: 50px; /* Zvýší mezeru nad H2 */
+        }
+        h3 {
+            margin-bottom: 0px; /* Menší mezera pod nadpisem */
+        }
+        p {
+            margin-top: 5px; /* Zmenšení mezery nad textem */
+        }
     </style>
 </head>
 <body>
